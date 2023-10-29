@@ -9,6 +9,8 @@ type Props = {
     }
 }
 
+export const revalidate = 3;
+
 const page = ({ params: { slug } }: Props): ReactElement => {
 
     const postData = getPost(slug);
