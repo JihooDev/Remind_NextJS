@@ -16,7 +16,6 @@ const page = async () => {
     // next: { revalidate: 3 },
     // cache : 'no-store'
     // });
-
     // const blogData = await res.json();
 
     return (
