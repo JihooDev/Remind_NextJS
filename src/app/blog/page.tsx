@@ -2,6 +2,7 @@ import { getPosts } from '@/service/blog'
 import { Blog } from '@/types/types';
 import Link from 'next/link';
 import React, { ReactElement, useEffect } from 'react'
+import ContentBox from '../components/ContentBox';
 
 const page = async () => {
 
@@ -15,6 +16,7 @@ const page = async () => {
         next: { revalidate: 3 },
         // cache : 'no-store'
     });
+
     const blogData = await res.json();
 
     return (
@@ -29,7 +31,8 @@ const page = async () => {
                 }
             </ul>
             <article>
-                {blogData[0].title}
+                {/* {blogData[0].title} */}
+                <ContentBox />
             </article>
         </div>
     )
