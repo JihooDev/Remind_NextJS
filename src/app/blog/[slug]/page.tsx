@@ -1,4 +1,5 @@
 import { getPost, getPosts } from '@/service/blog';
+import { Blog } from '@/types/types';
 import { notFound } from 'next/navigation';
 import React, { ReactElement } from 'react'
 
@@ -17,15 +18,15 @@ const page = ({ params: { slug } }: Props): ReactElement => {
     }
 
     return (
-        <div>page : {postData}</div>
+        <div>{postData.title}</div>
     )
 }
 
 export const generateStaticParams = () => {
     const blog = getPosts();
 
-    return blog.map((item: string) => ({
-        slug: item
+    return blog.map((item: Blog) => ({
+        slug: String(item.id)
     }))
 }
 
