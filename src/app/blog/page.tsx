@@ -12,12 +12,12 @@ const page = async () => {
 
     // 3 초 간격으로 자동 업데이트 (ISR)
     // 0 초를 사용 시  or cache : 'no-store' (SSR)
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
-        next: { revalidate: 3 },
-        // cache : 'no-store'
-    });
+    // const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    // next: { revalidate: 3 },
+    // cache : 'no-store'
+    // });
 
-    const blogData = await res.json();
+    // const blogData = await res.json();
 
     return (
         <div>
