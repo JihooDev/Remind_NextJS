@@ -27,7 +27,7 @@ export default function RootLayout({
                 <Link href='/'>Home</Link>
               </li>
               <li className='ml-5'>
-                <Link href='/product'>Product</Link>
+                <Link href='/blog'>Blog</Link>
               </li>
             </ul>
           </nav>
