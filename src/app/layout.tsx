@@ -17,7 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
       <body className={inter.className}>
         <header className='flex flex-row w-full bg-slate-300 h-20 p-3 items-center'>
           <h1>Welcome</h1>
@@ -28,6 +27,9 @@ export default function RootLayout({
               </li>
               <li className='ml-5'>
                 <Link href='/blog'>Blog</Link>
+              </li>
+              <li className='ml-5'>
+                <Link href='/ssr_page'>SSR</Link>
               </li>
             </ul>
           </nav>

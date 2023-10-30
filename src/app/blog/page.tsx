@@ -2,7 +2,7 @@ import { getPosts } from '@/service/blog'
 import { Blog } from '@/types/types';
 import Link from 'next/link';
 import React, { ReactElement, useEffect } from 'react'
-import ContentBox from '../components/ContentBox';
+import ContentBox from '../../components/ContentBox';
 
 const page = async () => {
 
